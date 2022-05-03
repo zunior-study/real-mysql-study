@@ -20,3 +20,7 @@
 |Week 01|사전 모임| - |
 |Week 02|MySQL 아키텍처| <a href="">[라영지]</a> <br> <a href="https://github.com/minyul">[민율]</a> <br> <a href="">[최정헌]</a> <br>  <a href="https://github.com/zunior-study/real-mysql-study/tree/main/%ED%98%84%EA%B1%B4%EC%88%98/01.%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98">[현건수] - GitHub </a> <br> |
 
+
+### 1주차 질문 - Mysql 아키텍처
++ 포그라운드 쓰레드와 백그라운드 쓰레드 차이?
+
