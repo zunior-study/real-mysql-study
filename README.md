@@ -20,6 +20,8 @@
 |Week 01|사전 모임| - |
 |Week 02|MySQL 아키텍처| <a href="">[라영지]</a> <br> <a href="https://github.com/minyul">[민율]</a> <br> <a href="">[최정헌]</a> <br>  <a href="https://github.com/zunior-study/real-mysql-study/tree/main/%ED%98%84%EA%B1%B4%EC%88%98/01.%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98">[현건수] - GitHub</a> <br> |
 |Week 03|트랜잭션과 잠금| <a href="">[라영지]</a> <br> <a href="https://github.com/minyul">[민율]</a> <br> <a href="">[최정헌]</a> <br>  <a href="https://github.com/zunior-study/real-mysql-study/tree/main/%ED%98%84%EA%B1%B4%EC%88%98/02.%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98%EA%B3%BC%20%EC%9E%A0%EA%B8%88">[현건수] - GitHub</a> <br> |
+|Week 04|인덱스| <a href="">[라영지]</a> <br> <a href="https://github.com/minyul">[민율]</a> <br> <a href="">[최정헌]</a> <br>  <a href="https://github.com/hgs-study/real-mysql-study/tree/main/%ED%98%84%EA%B1%B4%EC%88%98/03.%20%EC%9D%B8%EB%8D%B1%EC%8A%A4">[현건수] - GitHub</a> <br> |
+
 
 ### 질문 목록
 #### 1주차 - Mysql 아키텍처
@@ -50,3 +52,40 @@
     - 트랜잭션 번호 → 트랜잭션 내에 EX) 10번 → 깨지는것
     - 트랜잭션 번호도 언두로그 저장하기 때문에 트랜잭션 외부에서 동작하면
     - 언두로그에 있는 자신의 트랜잭션 번호보다 낮은 트랜잭션 번호 데이터를 읽어드리기 때문에
+
+
+#### 3주차 - 인덱스
+- 테이블 풀스캔과 인덱스 레인지 스캔의 I/O방식 특징
+    - 순차 I/O, 랜덤 I/O
+- 많은 자료구조가 있는데 인덱스가 왜 B-TREE를 사용하나?
+- 클러스터링 인덱스 VS 넌 클러스터링 인덱스
+- 커버링 인덱스 설명
+    - INDEX (A) → SELECT A
+- InnoDB 스토리지 엔진이 클러스터링 키를 가지는 조건
+    - 프라이머리 키 → 클러스터링 키
+    - 유니크 키 → 제일 첫번째 키가 클러스터링 키
+    - x → 레코드마다 내부적으로 일련번호 클러스터링 키
+- 복합인덱스, 선행 컬럼이 where 없으면 어떤 인덱스, 설명?
+    - INDEX(A,B)
+    - SELECT * FROM TABLE WHERE B= 10;
+    - [조건]인덱스 스킵 스캔 → MySQL 8.0, 커버링 인덱스
+- 복합인덱스, 5.7인경우 선행 컬럼이 없을 경우 어떻게 되는지?
+    - 선행 컬럼이 없으면 안타고
+    - INDEX(A,B) 있을 경우 LIKE(”%”)를 사용할 경우
+- 클러스터링 인덱스 구조가 B-TREE인데, 다른점
+    - 클러스터링 - 데이터 레코드를 가지고 있다
+- 클러스터링 인덱스 vs 세컨더리 인덱스 데이터를 찾아가는 방식
+- InnoDB와 MyISAM의 세컨더리 인덱스로 검색할 때의 차이점
+    - MyISAM은 인덱스를 검색해 레코드의 주소를 확인하고, 레코드의 주소로 최종 레코드를 가져옴
+    - InnoDB : 인덱스를 검색해 레코드의 프라이머리 키 값을 확인하고, 프라이머리 키 인덱스를 검색해서 최종 레코드를 가져옴
+- 유니크 인덱스 vs 세컨 인덱스
+    - 유니크, 세컨더리 인덱스 중에 유니크 더 빠르다(?)
+    - 검색
+    - 쓰기
+        - 세컨더리 : 더 빠르다고 ⇒ 체인지 버퍼를 통해 버퍼링
+        - 유니크 : 무조건 중복체크 ⇒ 더  느리다
+        - 읽기랑 쓰기 잠금이 데드락 빈번
+- 작업 범위 결정 조건 / 체크 조건으로 사용할 수 없는 인덱스 조건
+- 클러스터링 인덱스의 장단점
+- 외래키 DELETE CASCADE 설명 ?
+
