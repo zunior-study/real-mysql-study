@@ -20,7 +20,7 @@
 |Week 01|사전 모임| - |
 |Week 02|MySQL 아키텍처| <a href="">[라영지]</a> <br> <a href="https://github.com/minyul">[민율]</a> <br> <a href="">[최정헌]</a> <br>  <a href="https://github.com/zunior-study/real-mysql-study/tree/main/%ED%98%84%EA%B1%B4%EC%88%98/01.%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98">[현건수] - GitHub</a> <br> |
 |Week 03|트랜잭션과 잠금| <a href="">[라영지]</a> <br> <a href="https://github.com/minyul">[민율]</a> <br> <a href="">[최정헌]</a> <br>  <a href="https://github.com/zunior-study/real-mysql-study/tree/main/%ED%98%84%EA%B1%B4%EC%88%98/02.%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98%EA%B3%BC%20%EC%9E%A0%EA%B8%88">[현건수] - GitHub</a> <br> |
-|Week 04|인덱스| <a href="">[라영지]</a> <br> <a href="https://github.com/minyul">[민율]</a> <br> <a href="">[최정헌]</a> <br>  <a href="">[현건수] - GitHub</a> <br> |
+|Week 04|인덱스| <a href="">[라영지]</a> <br> <a href="https://github.com/minyul">[민율]</a> <br> <a href="">[최정헌]</a> <br>  <a href="https://github.com/hgs-study/real-mysql-study/tree/main/%ED%98%84%EA%B1%B4%EC%88%98/03.%20%EC%9D%B8%EB%8D%B1%EC%8A%A4">[현건수] - GitHub</a> <br> |
 
 ### 질문 목록
 #### 1주차 - Mysql 아키텍처
