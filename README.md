@@ -22,6 +22,7 @@
 |Week 03|트랜잭션과 잠금| <a href="">[라영지]</a> <br> <a href="https://github.com/minyul">[민율]</a> <br> <a href="">[최정헌]</a> <br>  <a href="https://github.com/zunior-study/real-mysql-study/tree/main/%ED%98%84%EA%B1%B4%EC%88%98/02.%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98%EA%B3%BC%20%EC%9E%A0%EA%B8%88">[현건수] - GitHub</a> <br> |
 |Week 04|인덱스| <a href="">[라영지]</a> <br> <a href="https://github.com/minyul">[민율]</a> <br> <a href="">[최정헌]</a> <br>  <a href="https://github.com/hgs-study/real-mysql-study/tree/main/%ED%98%84%EA%B1%B4%EC%88%98/03.%20%EC%9D%B8%EB%8D%B1%EC%8A%A4">[현건수] - GitHub</a> <br> |
 
+
 ### 질문 목록
 #### 1주차 - Mysql 아키텍처
 - 포그라운드 쓰레드와 백그라운드 쓰레드 차이는 무엇인가?
@@ -51,6 +52,7 @@
     - 트랜잭션 번호 → 트랜잭션 내에 EX) 10번 → 깨지는것
     - 트랜잭션 번호도 언두로그 저장하기 때문에 트랜잭션 외부에서 동작하면
     - 언두로그에 있는 자신의 트랜잭션 번호보다 낮은 트랜잭션 번호 데이터를 읽어드리기 때문에
+
 
 #### 3주차 - 인덱스
 - 테이블 풀스캔과 인덱스 레인지 스캔의 I/O방식 특징
@@ -86,3 +88,4 @@
 - 작업 범위 결정 조건 / 체크 조건으로 사용할 수 없는 인덱스 조건
 - 클러스터링 인덱스의 장단점
 - 외래키 DELETE CASCADE 설명 ?
+
