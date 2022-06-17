@@ -21,6 +21,7 @@
 |Week 02|MySQL 아키텍처| <a href="">[라영지]</a> <br> <a href="https://github.com/minyul">[민율]</a> <br> <a href="">[최정헌]</a> <br>  <a href="https://github.com/zunior-study/real-mysql-study/tree/main/%ED%98%84%EA%B1%B4%EC%88%98/01.%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98">[현건수] - GitHub</a> <br> |
 |Week 03|트랜잭션과 잠금| <a href="">[라영지]</a> <br> <a href="https://github.com/minyul">[민율]</a> <br> <a href="">[최정헌]</a> <br>  <a href="https://github.com/zunior-study/real-mysql-study/tree/main/%ED%98%84%EA%B1%B4%EC%88%98/02.%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98%EA%B3%BC%20%EC%9E%A0%EA%B8%88">[현건수] - GitHub</a> <br> |
 |Week 04|인덱스| <a href="">[라영지]</a> <br> <a href="https://github.com/minyul">[민율]</a> <br> <a href="">[최정헌]</a> <br>  <a href="https://github.com/hgs-study/real-mysql-study/tree/main/%ED%98%84%EA%B1%B4%EC%88%98/03.%20%EC%9D%B8%EB%8D%B1%EC%8A%A4">[현건수] - GitHub</a> <br> |
+|Week 05|옵티마이저와 힌트| <a href="">[라영지]</a> <br> <a href="https://github.com/minyul">[민율]</a> <br> <a href="">[최정헌]</a> <br>  <a href="https://github.com/hgs-study/real-mysql-study/tree/main/%ED%98%84%EA%B1%B4%EC%88%98/04.%EC%98%B5%ED%8B%B0%EB%A7%88%EC%9D%B4%EC%A0%80%EC%99%80%20%ED%9E%8C%ED%8A%B8_1">[현건수] - GitHub</a> <br> |
 
 
 ### 질문 목록
@@ -94,3 +95,11 @@
 - 클러스터링 인덱스의 장단점
 - 외래키 DELETE CASCADE 설명 ?
 
+
+### 4주차 - 옵티마이저와 힌트
+- 쿼리 실행 순서에 대해 설명해주세요
+- InnoDB 엔진으로 테이블 풀스캔 할 때, 빠른 처리를 위해 리드 어헤드를 사용하는데, 리드 어헤드를 설명해주세요
+- 정렬 시, 소트버퍼와 디스크에 저장하면서 사용하는데, 이를 `멀티 머지` 라고 하는데 간단하게 설명해주세요.
+- 정렬을 처리하는 방법중 filesort 사용시 소트 버퍼를 사용하게되는데 이때 싱글 패스, 투 패스 각각의 장단점에 대해 설명해주세요.
+- `select * from bigtable` 같은 쿼리를 싱행하면, MySQL 서버는 스트리밍 방식을 사용하지만 JDBC 라이브러리가 버퍼링 방식을 사용하는 이유는?
+    
